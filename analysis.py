@@ -34,7 +34,7 @@ R2 = 1 - ((Yvals-estY)**2).sum()/((Yvals-Yvals.mean())**2).sum()
 #plot of observed and modeled data
 pylab.scatter(Xvals,Yvals, c='b', label='observed')
 pylab.plot(Xvals,estY, c='r', label='predicted:' + ' R2' '='+ ' ' + str(round(R2,4)))
-pylab.xlabel('k (A/Bohr)')
+pylab.xlabel('k (2pi/a)')
 pylab.ylabel('E (eV)')
 pylab.xticks(pylab.arange(0.8, 1.05, 0.05))
 pylab.legend()
